@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="body">
+    <button id="jumpButton">jump</button>
+    <div id="mario">
+      <div class="white-text">mario</div>
+    </div>
+  </div>
+</body>
+
+<style>
+  .body {
+    width: 100%;
+    height: 100%;
+  }
+  /* center the image */
+  #mario {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .white-text {
+    color: white;
+  }
+</style>
+<script src="main.js"></script>
+</html>
