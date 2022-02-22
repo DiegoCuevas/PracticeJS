@@ -7,7 +7,7 @@ function jump(){
   mario.style.top = '200px'
   audio.play();
   const aea = () => { mario.style.top = ''}
-  setTimeout(aea, 500)
+  setTimeout(aea, 400)
 }
 
 document.addEventListener("keyup", function(event){
