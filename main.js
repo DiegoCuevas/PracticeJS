@@ -1,11 +1,22 @@
 /* document.getElementById("jumpButton").addEventListener("click", jump) */
 // document.getElementById("mario").addEventListener("mouseover", jump)
 // document.getElementById("mario").addEventListener("mouseout", jump)
-document.addEventListener("keyup", jump)
 function jump(){
   let mario = document.getElementById('mario')
   let audio = document.getElementById('audio')
-  mario.style.top = '300px'
+  mario.style.top = '200px'
   audio.play();
-  setTimeout(() => { mario.style.top = ''}, 500)
+  const aea = () => { mario.style.top = ''}
+  setTimeout(aea, 500)
 }
+
+document.addEventListener("keyup", function(event){
+  if(event.keyCode == 32){
+    jump()
+  }
+})
+
+
+document.getElementById("search").addEventListener("input", function(event){
+  console.log(event.target.value)
+})
