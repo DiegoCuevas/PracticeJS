@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-size: cover;
+  background-image: url("../images/background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* center the image */
+#mario {
+  position: absolute;
+  max-width: 90px;
+  top: 78%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+.mario-img {
+  width: 100%;
+  object-fit: cover;
+}
+.white-text {
+  color: white;
+}
+
+@media (min-width: 1080px) {
+  #mario{
+    top: 88%;
+  }
+}

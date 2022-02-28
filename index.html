@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="body">
+  <div class="background">
     <button id="jumpButton">jump</button>
     <input id="search" />
     <div id="mario">
@@ -15,37 +15,6 @@
       <audio id="audio" src="./stylesheets/audio/mario-bros-jump.mp3"></audio>
     </div>
   </div>
+  <script src="main.js"></script>
 </body>
-
-<style>
-  body{
-    background-size: auto;
-    background-position: 0;
-    background-image: url("stylesheets/images/background.jpeg");
-  }
-  .body {
-    width: 100%;
-    height: 100%;
-  }
-  .mario-img {
-    width: 220px;
-  }
-  /* center the image */
-  #mario {
-    position: absolute;
-    height: 300px;
-    width: 300px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.4s;
-  }
-  .white-text {
-    color: white;
-  }
-</style>
-<script src="main.js"></script>
 </html>
