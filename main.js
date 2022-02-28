@@ -10,13 +10,12 @@ function jump(){
   setTimeout(aea, 400)
 }
 
-document.addEventListener("keyup", function(event){
+document.addEventListener("keyup", (event) =>{
   if(event.keyCode == 32){
     jump()
   }
 })
 
-
-document.getElementById("search").addEventListener("input", function(event){
+document.getElementById("search").addEventListener("input", (event) => {
   console.log(event.target.value)
 })
